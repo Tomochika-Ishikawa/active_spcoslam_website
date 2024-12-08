@@ -56,26 +56,31 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Tomochika Ishikawa</a><sup>*</sup>,</span>
+                Tomochika Ishikawa</a><sup>1,*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Akira Taniguchi</a><sup>*</sup>,</span>
+                  <a href="https://scholar.google.com/citations?user=jtB7J0AAAAAJ&hl=en&oi=ao" target="_blank">Akira Taniguchi<sup>1</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Yoshinobu Hagiwara</a>
+                    <a href="https://scholar.google.com/citations?user=Y4qjYvMAAAAJ&hl=en&oi=ao" target="_blank">Yoshinobu Hagiwara<sup>1,2</sup>,</span>
                     <span class="author-block">
-                      <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Yoshinobu Hagiwara</a>
+                      <a href="https://scholar.google.com/citations?user=dPOCLQEAAAAJ&hl=en&oi=ao" target="_blank">Tadahiro Taniguchi<sup>1,3</sup>,</span>
                     </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">
+                      <sup>1</sup>Ritsumeikan University,
+                      <sup>2</sup>Soka University,
+                      <sup>3</sup>Kyoto University
+                      <br><span>Accepted at IEEE SMC 2023.</span>
+                    </span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10394143?casa_token=8yftehsiJIwAAAAA:rUZMh4twHkhtegXJfWV9ytbpv2OV8LNU6S2Swm1O9g8H908LvE4xmH0pyMkMZm45Qr3N-bfpY1M" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -86,7 +91,7 @@
 
                     <!-- Supplementary PDF link -->
                     <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      <a href="https://drive.google.com/file/d/1BGDmYK7fahyv-2aKla5YY8fmZFaZ5izd/view" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
@@ -97,7 +102,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/Tomochika-Ishikawa/Active-SpCoSLAM" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -107,13 +112,13 @@
                 </span>
 
                 <!-- ArXiv abstract Link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>arXiv</span> -->
                 </a>
               </span>
             </div>
@@ -129,14 +134,15 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+        <iframe 
+          src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1&mute=1&loop=1&playlist=YOUR_VIDEO_ID" 
+          frameborder="0" 
+          allow="autoplay; encrypted-media" 
+          allowfullscreen 
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+        </iframe>
+      </div>
     </div>
   </div>
 </section>
@@ -150,7 +156,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Active semantic mapping is essential for service robots to quickly capture both the map of an environment and its spatial meaning, while also minimizing the burden on users during robot operation and data collection. SpCoSLAM, a method of semantic mapping with place categorization and simultaneous localization and mapping (SLAM), is well suited to environmental adaptation, as it is not limited to predefined labels. However, SpCoSLAM presents two issues that increase the burden on users: 1) users struggle to efficiently determine a destination for the robot’s quick adaptation, and 2) providing instructions to the robot becomes repetitive and cumbersome. To address these challenges, we propose Active-SpCoSLAM, which enables the robot to actively explore uncharted areas and employs CLIP for image captioning to provide a flexible vocabulary that replaces human instructions. The robot determines its actions by calculating information gain integrated from both semantics and SLAM uncertainties. We conducted experiments in a simulated environment, comparing the proposed method to other methods in terms of efficiency and applicability to object discovery tasks. Additionally, we tested the proposed method, which combines user instruction and CLIP, in a real environment. Our results demonstrated that the robot explored its environment with approximately five fewer iterations and 11 minutes faster compared to the case of random exploration. Moreover, our method achieved a higher success rate in object discovery tasks during earlier stages of learning compared to other methods. In conclusion, the proposed method rapidly covers an environment while gathering useful data for object discovery tasks, thus reducing the burden on users and enhancing the robot’s adaptability.
           </p>
         </div>
       </div>
@@ -161,7 +167,7 @@
 
 
 <!-- Image carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
@@ -196,7 +202,7 @@
   </div>
 </div>
 </div>
-</section>
+</section> -->
 <!-- End image carousel -->
 
 
@@ -213,7 +219,7 @@
           
           <div class="publication-video">
             <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/n8se-MgPi50" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -277,11 +283,21 @@
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <!-- <pre><code>BibTex Code Here</code></pre> -->
+    <pre><code>
+      @inproceedings{ishikawa2023active,
+        title={Active semantic mapping for household robots: rapid indoor adaptation and reduced user burden},
+        author={Ishikawa, Tomochika and Taniguchi, Akira and Hagiwara, Yoshinobu and Taniguchi, Tadahiro},
+        booktitle={2023 IEEE International Conference on Systems, Man, and Cybernetics (SMC)},
+        pages={3116--3123},
+        year={2023},
+        organization={IEEE}
+      }
+    </code></pre>
+  </div>
 </section>
 <!--End BibTex citation -->
 
