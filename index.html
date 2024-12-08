@@ -172,40 +172,48 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+      <h2 class="title is-3">Action Determination</h2>
       <!--       <div id="results-carousel" class="carousel results-carousel"> -->
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
+            <source src="static/videos/information_gain_demo.mp4"
             type="video/mp4">
           </video>
           <h2 class="subtitle has-text-centered">
-            An overview of our research. 
-            The robot classifies tasks based on the user's query and determines the requisite processing. 
-            If the query necessitates exophora resolution (ER), the robot executes ER using the query from the user and skeleton information to identify the target object. 
-            If the query does not require ER or following the identification of the target object, the robot proceeds with action planning.
+            The robot navigates to the position with the maximum information gain among the candidate points.
+            The IG in Active-SpCoSLAM consists of a weighted sum of three IGs: related to spatial concepts, self-location, and maps, respectively.
           </h2>
+          
         </div>
-        <!--         <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div> -->
-      <!--       </div> -->
     </div>
   </div>
 </section>
 <!-- End video carousel -->
+
+<!-- Video carouse2 -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Learning Spatial Concept</h2>
+      <!--       <div id="results-carousel" class="carousel results-carousel"> -->
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/spatial_concept.mp4"
+            type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            First, the robot acquires multiple images of its surroundings with the head camera.
+            Then, the images are input to ClipCap for caption generation, and the images are input to CNN to obtain image features.
+            The robot learns location concepts by categorizing these, plus self-position, into three multimodal pieces of information.
+          </h2>
+          
+        </div>
+    </div>
+  </div>
+</section>
+<!-- End video carouse2 -->
 
 
 <!-- Youtube video -->
@@ -246,6 +254,18 @@
   </div>
 </section>
 <!--End BibTex citation -->
+
+<!--Acknowledgements citation -->
+<section class="section" id="Acknowledgements">
+  <div class="container is-max-desktop content">
+    <!-- <h2 class="title">Acknowledgements</h2> -->
+    <h2 class="title">Funding</h2>
+    <p>
+      This work was supported by the Japan Science and Technology Agency (JST), Moonshot Research & Development Program (Grant Number JPMJMS2011), and the Japan Society for the Promotion of Science (JSPS), KAKENHI Grant Number JP20K19900, JP23K16975 and JP22K12212.
+    </p>
+  </div>
+</section>
+<!--End Acknowledgements citation -->
 
 
   <footer class="footer">
